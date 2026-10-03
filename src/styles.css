@@ -5246,5 +5246,52 @@ a {
     }
 }
 
+/* Small-screen overrides kept after all component styles. */
+@media (max-width: 640px) {
+    html { scroll-padding-top: 72px; }
+    body { padding-bottom: 76px; }
+    .header-container { padding: 12px 16px; }
+    .header-logo img { height: 36px; }
+    .main-nav { top: 62px; height: calc(100dvh - 62px); padding: 24px 16px; }
+    .nav-menu a { padding: 15px 12px; }
+    .fobet-hero-wrapper { padding-top: 62px; }
+    .hero-redesigned { padding: 42px 16px 32px; }
+    .hero-container { gap: 28px; }
+    .hero-headline { font-size: clamp(2.2rem, 11vw, 3.4rem); line-height: 1.05; }
+    .hero-description { font-size: 15px; }
+    .founder-stage-container { height: 390px; }
+    .founder-section { max-width: 100%; }
+    .two-day-section, .results-section, .packages-section, .services-showcase-section, .roi-calculator-section, .google-reviews-section, .comparison-section, .quiz-section, .case-studies-section, .ad-simulator-section, .scanner-section { padding-left: 16px !important; padding-right: 16px !important; }
+    .text-content h2, .section-title { font-size: clamp(1.9rem, 9vw, 2.7rem) !important; line-height: 1.12; }
+    .section-subtitle { font-size: 14px; }
+    .service-tabs-nav, .case-filters-row, .faq-filter-pills-row, .ad-format-selector { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
+    .service-tab-btn, .case-filter-pill, .faq-filter-pill, .ad-format-pill { flex: 0 0 auto; }
+    .service-panel-card, .calculator-card-wrapper, .ad-sim-controls-card, .ad-preview-cockpit, .scanner-input-deck, .terminal-logs-view, .video-lightbox-dossier { padding: 20px 16px; }
+    .service-panel-visual { height: 210px; }
+    .ad-mockup-media { height: 180px; }
+    .ad-telemetry-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .ad-telemetry-card { padding: 10px; }
+    .ad-telemetry-card .telem-val { font-size: 17px; }
+    .scanner-terminal-card { margin-top: 26px; border-radius: 14px; }
+    .scanner-url-field, .scanner-industry-select, .scanner-run-btn { min-width: 0; }
+    .terminal-top-bar { padding: 12px 14px; }
+    .terminal-title-text { font-size: 10px; }
+    .terminal-log-line { align-items: flex-start; gap: 8px; font-size: 12px; }
+    .terminal-score-result { padding: 18px; }
+    .video-lightbox-overlay { padding: 12px; }
+    .video-lightbox-container { border-radius: 14px; }
+    .dock-actions-row { gap: 8px; }
+    .dock-call-btn, .dock-cta-btn { padding: 10px 8px; font-size: 11px; }
+    .lead-modal-overlay { padding: 14px; }
+    .lead-modal-container { max-height: calc(100dvh - 28px); overflow-y: auto; }
+}
+
+@media (max-width: 380px) {
+    .header-logo img { height: 32px; }
+    .hero-headline { font-size: 2rem; }
+    .dock-call-btn i { display: none; }
+    .ad-telemetry-grid { grid-template-columns: 1fr; }
+}
+
 
 
